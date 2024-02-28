@@ -48,7 +48,7 @@ const props = defineProps({
 
 const input = ref("");
 const isFocused = ref(false);
-const isError = computed(() => input.value.length >= 10);
+const isError = computed(() => input.value.length >= 1000);
 const isLoading = ref(false);
 
 const clearInput = () => {
